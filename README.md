@@ -144,4 +144,4 @@ python3 script_radeApprox_singleDataset.py MSNBC.txt 0.04 0.1
 The value of the upper bound to the maximum deviation is stored in radeApprox_singleDataset.txt in the data/TFSP/ folder. The true frequent sequential patterns mined from the dataset are stored in dataset_RA_FN_guarantees.txt and dataset_RA_FP_guarantees.txt, in the data/TFSP/ folder, where dataset is the name of the file provided in input.
 
 ## License
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE) file for details
