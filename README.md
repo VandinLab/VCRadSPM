@@ -1,12 +1,12 @@
 # VCRadSPM: Mining Sequential Patterns with VC-Dimension and Rademacher Complexity
 ## Authors: Diego Santoro (diego.santoro@dei.unipd.it), Andrea Tonon (andrea.tonon@dei.unipd.it), and Fabio Vandin (fabio.vandin@unipd.it)
-This repository contains the implementation of the algorithms introduced in the paper *Mining Sequential Patterns with VC-Dimension and Rademacher Complexity* and the code that has been used to test their performance and correctness.
+This repository contains the implementation of the algorithms introduced in the paper *Mining Sequential Patterns with VC-Dimension and Rademacher Complexity* and the code that has been used to test their performance.
 
 The code to compute the bound on the VC-dimension and to perform the evaluation has been developed in Java and executed using version 1.8.0_201. The code to compute the bound and the approximation to the Rademacher complexity has been developed in C++. 
 To mine sequential patterns, we used the PrefixSpan implementation provided by the [SPMF library](https://www.philippe-fournier-viger.com/spmf/). We used [NLopt](https://nlopt.readthedocs.io/en/latest/) as non-linear optimization solver.
 
 ## Package Description
-The package contains two folders:
+The package contains the following folders:
 * src/: contains the source code 
 * data/: contains the datasets used in the evaluation
 * data/sampling/: contains the output files of the sampling algorithm
@@ -15,8 +15,8 @@ The package contains two folders:
 * data/TFSP/samples/: contains the pseudo-artificial datasets built from the real datasets created for the evaluation of the TFSP algorithms
 
 ## Download and Install Nlopt
-Download it from "https://github.com/stevengj/nlopt/archive/v2.6.1.tar.gz".
-Install it by running the following code in the nlopt directory (for detailed information, look at "https://nlopt.readthedocs.io/en/latest/NLopt_Installation/"):
+Download it from https://github.com/stevengj/nlopt/archive/v2.6.1.tar.gz.
+Install it by running the following code in the nlopt directory (for detailed information, look at https://nlopt.readthedocs.io/en/latest/NLopt_Installation/):
 ```
 mkdir build
 cd build
@@ -34,7 +34,7 @@ javac src/*.java
 The C++ source code is compiled inside the python scripts to execute the algorithms.
 
 ## Reproducibility
-We provided the source code and the scripts to replicate the results of the paper, shown in Section 7 of the paper. 
+We provided the source code and the scripts to replicate the results shown in Section 7 of the paper. 
 
 ### Sampling Algorithm
 Usage:
