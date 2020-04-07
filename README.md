@@ -14,7 +14,7 @@ The package contains the following folders:
 * data/TFSP/: contains the output files of the TFSP algorithms
 * data/TFSP/samples/: contains the pseudo-artificial datasets built from the real datasets created for the evaluation of the TFSP algorithms
 
-## Download and Install Nlopt
+## Download and Install NLopt
 Download it from https://github.com/stevengj/nlopt/archive/v2.6.1.tar.gz.
 Install it by running the following code in the nlopt directory (for detailed information, look at https://nlopt.readthedocs.io/en/latest/NLopt_Installation/):
 ```
@@ -34,7 +34,7 @@ javac src/*.java
 The C++ source code is compiled inside the python scripts to execute the algorithms.
 
 ## Reproducibility
-We provided the source code and the scripts to replicate the results shown in Section 7 of the paper. 
+We provide the source code and the scripts to replicate the results shown in Section 7 of the paper. 
 
 ### Sampling Algorithm
 Usage:
@@ -48,7 +48,7 @@ All the results are stored in the data/sampling/ folder while the enlarged datas
 ### TFSP Algorithm
 Since the computation of the approximation to the Rademacher complexity is time consuming, we provided two different ways to replicate the TFSP results:
 	
-* It is possible to run the TFSP evaluation computing the upper bounds on the maximum deviation with the empirical VC-dimension on the fly, and using precomputed upper bounds on the maximum deviation for the Rademacher complexity bounds and approximations. The precomputed values for the Rademacher approaches are stored in the [radeBound](data/TFSP/radeBound.txt) and [radeApprox](data/TFSP/radeApprox.txt) files, respectively.
+* It is possible to run the TFSP evaluation computing the upper bounds on the maximum deviation with the empirical VC-dimension on the fly, and using precomputed upper bounds on the maximum deviation for the Rademacher complexity bounds and approximations. The precomputed values for the Rademacher-based approaches are stored in the [radeBound](data/TFSP/radeBound.txt) and [radeApprox](data/TFSP/radeApprox.txt) files, respectively.
 
 Usage: 
 ```
