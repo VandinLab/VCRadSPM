@@ -13,6 +13,7 @@ The package contains the following folders:
 * data/sampling/datasets/: contains the enlarged datasets built from the real datasets created for the evaluation of the sampling algorithm
 * data/TFSP/: contains the output files of the TFSP algorithms
 * data/TFSP/samples/: contains the pseudo-artificial datasets built from the real datasets created for the evaluation of the TFSP algorithms
+* data/TFSP/samples/minedFiles: contains the file minned during the evaluation of the TFSP algorithms
 
 ## Download and Install NLopt
 Download it from https://github.com/stevengj/nlopt/archive/v2.6.1.tar.gz.
@@ -86,7 +87,7 @@ Example of usage:
 ```	
 java -Xmx10G -cp ./src Sampling MSNBC.txt 0.04 0.05 0.1 false
 ```
-The frequent sequential patterns mined from the sample are stored in a file, dataset_Approx.txt or dataset_FPF_Approx.txt, in the data/sampling/ folder, where dataset is the name of the file provided in input. 
+The frequent sequential patterns mined from the sample are stored in a file, dataset_Approx.txt or dataset_FPF_Approx.txt, in the data/sampling/ folder, while the sample is stored in the file dataset_sample.txt in the data/sampling/ folder, where dataset is the name of the file provided in input. The program writes to the standard output the input parameters, some statistics on the data and the execution time.
 
 ### TFSP Algorithm using the empirical VC-dimension
 Usage: 
@@ -105,7 +106,7 @@ Example of usage:
 ```
 java -Xmx10G -cp ./src TFSP MSNBC.txt 0.04 0.1 false
 ```
-The true frequent sequential patterns mined from the dataset are stored in a file, dataset_TFSP_Approx.txt or dataset_TFSP_FPF_Approx.txt, in the data/TFSP/ folder, where dataset is the name of the file provided in input. 
+The true frequent sequential patterns mined from the dataset are stored in a file, dataset_TFSP_Approx.txt or dataset_TFSP_FPF_Approx.txt, in the data/TFSP/ folder, where dataset is the name of the file provided in input. The program writes to the standard output the input parameters, some statistics on the data and the execution time. 
 
 ### TFSP Algorithm using an upper bound on the empirical Rademacher complexity
 Usage: 
