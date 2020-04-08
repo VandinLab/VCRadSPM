@@ -115,8 +115,8 @@ python3 script_radeBound_singleDataset.py dataset theta delta beta_1 beta_2
 ```
 
 Arguments:
-* dataset: the name of the file containing the sequential dataset. The dataset must be in the format described in the SPMF Library documentation and it must be in the data folder (e.g., MSNBC.txt)
-* theta: the minimum frequency threshold in (0,1] (e.g., 0.04)
+* dataset: the name of the file containing the sequential dataset. The dataset must be in the format described in the SPMF Library documentation and it must be in the data folder (e.g., BIBLE.txt)
+* theta: the minimum frequency threshold in (0,1] (e.g., 0.1)
 * delta: confidence parameter in (0,1) (e.g., 0.1)
 * beta_1: positive integer number (e.g., 20)
 * beta_2: positive integer number (e.g., 120)
@@ -134,7 +134,7 @@ python3 script_radeApprox_singleDataset.py dataset theta delta
 ```
 
 Arguments:
-* dataset: the name of the file containing the sequential dataset. The dataset must be in the format described in the SPMF Library documentation and it must be in the data folder (e.g., MSNBC.txt)
+* dataset: the name of the file containing the sequential dataset. The dataset must be in the format described in the SPMF Library documentation and it must be in the data folder (e.g., KOSARAK.txt)
 * theta: the minimum frequency threshold in (0,1] (e.g., 0.04)
 * delta: confidence parameter in (0,1) (e.g., 0.1)
 
