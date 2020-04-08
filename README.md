@@ -123,7 +123,7 @@ Arguments:
 
 Example of usage: 
 ```
-python3 script_radeBound_singleDataset.py MSNBC.txt 0.04 0.1 20 120
+python3 script_radeBound_singleDataset.py data/BIBLE.txt 0.1 0.1 20 120
 ```
 The value of the upper bound to the maximum deviation is stored in radeBound_singleDataset.txt in the data/TFSP/ folder. The true frequent sequential patterns mined from the dataset are stored in dataset_RB_FN_guarantees.txt and dataset_RB_FP_guarantees.txt, in the data/TFSP/ folder, where dataset is the name of the file provided in input.
 
@@ -140,7 +140,7 @@ Arguments:
 
 Example of usage: 
 ```
-python3 script_radeApprox_singleDataset.py MSNBC.txt 0.04 0.1
+python3 script_radeApprox_singleDataset.py data/KOSARAK.txt 0.04 0.1
 ```
 The value of the upper bound to the maximum deviation is stored in radeApprox_singleDataset.txt in the data/TFSP/ folder. The true frequent sequential patterns mined from the dataset are stored in dataset_RA_FN_guarantees.txt and dataset_RA_FP_guarantees.txt, in the data/TFSP/ folder, where dataset is the name of the file provided in input.
 
