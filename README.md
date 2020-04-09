@@ -42,7 +42,7 @@ Usage:
 ```
 java -XmxRG -cp ./src TestSampling
 ```
--XmxRG allows to specify the maximum memory allocation pool for the Java Virtual Machine (JVM). R must be replaced with an integer that represents the maximum memory in GB (e.g., 10G).
+-XmxRG allows to specify the maximum memory allocation pool for the Java Virtual Machine (JVM). R must be replaced with an integer that represents the maximum memory in GB (e.g., 200G).
 
 All the results are stored in the data/sampling/ folder while the enlarged datasets used for the evaluation are stored in the data/sampling/datasets/ folder. The program writes to the standard output all the results shown in Section 7.3 of the paper. 
 

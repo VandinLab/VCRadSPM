@@ -259,11 +259,11 @@ public class TestSampling {
                 end = System.currentTimeMillis() - start;
                 timeSampleCreation += end;
                 start = System.currentTimeMillis();
-                Algorithms.mining(sampleFile, sampleMinned + i + ".txt", theta[index] - epsilon / 2);
+                Algorithms.mining(sampleFile, sampleMinned + i + ".txt", theta[index] - epsilon / 2.);
                 end = System.currentTimeMillis() - start;
                 timeMiningSample += end;
                 start = System.currentTimeMillis();
-                Algorithms.mining(sampleFile, sampleMinnedFPF + i + ".txt", theta[index] + epsilon / 2);
+                Algorithms.mining(sampleFile, sampleMinnedFPF + i + ".txt", theta[index] + epsilon / 2.);
                 end = System.currentTimeMillis() - start;
                 timeMiningSampleFPF += end;
                 start = System.currentTimeMillis();
@@ -273,7 +273,7 @@ public class TestSampling {
                 System.gc();
             }
             System.out.println("|S|/|D|:" + sampleSize/(datasetSize*1.));
-            Algorithms.mining(file, datasetMinnedEps, theta[index] - epsilon);
+            Algorithms.mining(datasetFile, datasetMinnedEps, theta[index] - epsilon);
             checkApp(datasets[index], epsilon, datasetSize, sampleSize, iteration);
             checkAppFPF(datasets[index], epsilon, datasetSize, sampleSize, iteration, theta[index]);
             System.out.println("AVG Time Sample Size Computation: " + timeSampleSize / (iteration*1.)+"ms");
